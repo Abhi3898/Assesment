@@ -1,0 +1,150 @@
+1) Write a Program to store following values in array:
+12,67,10,98,69
+a. Find total items.
+b. Find middle value.
+c. Find item at 2nd Position.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+1-a. Answer :-
+--------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        a=[12,67,10,98,69];
+        length=a.length
+        document.write("The total items of array are : "+length);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+1-b. Answer :-
+--------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        a=[12,67,10,98,69,70,80];
+        value = a[a.length / 2 | 0];
+        document.write("The middle value is : "+value);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+1-c. Answer :-
+-------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        a=[12,67,10,98,69,70,80];
+        document.write("The seond value is : "+a[1]);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+2) Write a Program to find percentage in 3 subjects and check if percentage is greater than 75 or not. 
+Note - Subject Marks must be entered by the user only.
+
+A-Answer :-
+----------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script>
+        subject1 = parseInt(prompt("Enter subject1 marks"));
+        subject2 = parseInt(prompt("Enter subject1 marks"));
+        subject3 = parseInt(prompt("Enter subject1 marks"));
+        document.write("Subject1 =  "+subject1)
+        document.write("<br>");
+        document.write("Subject2 =  "+subject2)
+        document.write("<br>");
+        document.write("Subject3 =  "+subject3)
+        document.write("<br>");
+        total = subject1+subject2+subject3;
+        document.write("Total 3 subject marks = " +total);
+        document.write("<br>");
+        p = (total/300)*100;
+        document.write("Total percentage are = "+p+"%"); 
+        document.write("<br>");
+        if(p > 75)
+        {
+            document.write("Percentage is greaterthan 75%");
+        }
+        else
+        {
+            document.write("Percentage is not greaterthan 75%");
+        }
+   </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3) Write a Program to find sum of a three digit number.
+Note - Number must be entered by the user only.
+
+A-Answer :-
+---------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        num=prompt("Enter three digit number:");
+        document.write("A = "+num)
+        a=parseInt(num/100);
+        // document.write(a);
+        b=num%100;
+        q=parseInt(b/10);
+        // document.write(q);
+        r=b%10;
+        sum=a+q+r;
+        document.write("<br> <br>");
+        document.write("Sum of three digit numbers are");
+        document.write("<br> <br>")
+        document.write(a+"+"+q+"+"+r+"=" +sum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
