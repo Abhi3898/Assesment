@@ -1,0 +1,38 @@
+1.Write a Program to check whether the entered number is positive or negative.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1.Answer :-
+----------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <script>
+             number = parseInt(prompt("Enter the number"));
+            
+            if (number > 0) {
+                document.write('positive');
+                
+            } else if (number < 0) {
+                document.write('negative');
+            } else {
+                document.write('zero');
+            }
+    </script>
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+2.Write a Program to check whether the entered number is odd or even.
+
+2.Answer :-
+----------
+
